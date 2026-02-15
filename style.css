@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* ================= BANNER ================= */
+
+.banner {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.banner img {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+}
+
+/* ================= ÁREA DOS DIAS ================= */
+
+.dias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding-bottom: 80px;
+}
+
+/* ================= CADA DIA ================= */
+
+.dia {
+  width: 80%;
+  max-width: 700px;
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+
+  transition: 0.3s ease;
+}
+
+.dia:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+}
+
+/* ================= TÍTULO ================= */
+
+h2 {
+  font-size: 24px;
+  color: #ff3c3c;
+  margin-bottom: 8px;
+}
+
+/* ================= CAPA + BOTÃO ================= */
+
+.capa-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 8px 0;
+}
+
+.capa-video img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  box-shadow: 0 0 2px rgba(255, 0, 0, 0.2);
+}
+
+/* ================= BOTÃO ================= */
+
+.botao-video {
+  background: red;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.botao-video:hover {
+  background: darkred;
+  transform: scale(1.05);
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 768px) {
+  .dia {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .capa-video {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
